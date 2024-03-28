@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Workbench&display=swap');
+
+@keyframes SlideInLeft{
+    from{
+    transform:translateX(-200px);
+}
+    to{
+        transform:translateX(0px);
+    }
+}
+@keyframes SlideInRight{
+    from{
+    transform:translateX(200px);
+}
+    to{
+        transform:translateX(0px);
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+      opacity:1;
+    }
+}
+@keyframes swing {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style:none;
+}
+
+:root{
+    --bg-color:#000000;
+    --text-color:#ff0404;
+}
+body{
+    min-height:100vh;
+    background-color: var(--bg-color);
+    color:var(--text-color);
+}
+.nav{
+    position:sticky;
+    width:100%;
+    top:0;
+    right:65px;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    padding:30px;
+    height:9vh;
+    
+}
+#greeting-top{
+    color:yellow
+}
+.logo{
+    display:flex;
+    align-items: center;
+    color:var(--text-color);
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 699;
+    font-style: normal;
+    font-size: 30px;
+}
+.logo span{
+    text-decoration-line:none; 
+    text-decoration-style:wavy;
+    text-decoration-color: yellow;
+}
+.logo i {
+    color:#ff0404;
+    font-size: 40px;
+    padding:25px;
+}
+.navbar{
+    display:flex;
+}
+.navbar li {
+    color:var(--text-color);
+    font-size:1.1rem;
+    font-weight: 600;
+    padding:40px;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    transition: all 2s ;
+    font-size:20px;
+}
+.navbar li:hover{
+    color:rgb(255, 255, 255);
+    transform: translateY(-10px);
+    letter-spacing: 2.5px;
+    
+}
+
+.contactme {
+    background-color:var(--text-color);
+    border:0px;
+    
+    border-radius:5px;
+    transition: all 2s ;
+    font-size:20x
+}
+.contactme i{
+    color:var(--bg-color);
+    font-size:2rem;
+    padding:10px;
+}
+.contactme span {
+    position:relative;
+    color:white;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    vertical-align: center;
+    text-align: center;
+    bottom:10px;
+    padding:10px;
+    
+}
+.contactme:hover{
+    letter-spacing: 2.5px;
+    transition: all 0.5s;
+    transform: translateX(10px);
+    box-shadow: 2px 2px 2px rgb(255, 225, 0);
+    
+}
+
+ /* Hero section starts */
+
+ .hero{
+    display:inline-flex;
+    justify-content: center;
+    position:relative;
+    z-index: 1;
+    
+    top:300px;
+    left:100px;
+    width:90vw;
+
+ }
+ .hero-content{
+    margin-left: 60px;
+ }
+#name{
+    color:white;
+    text-decoration-style: wavy;
+    text-decoration-color: #ff0000;
+    font-size:120px;
+    animation-name:fade;
+    animation-duration: 1s;
+}
+#nick{
+    color:rgb(255, 0, 0);
+}
+#heroimg{
+    animation-name: SlideInLeft;
+    animation-duration: 2s;
+
+    transition:all 0.2s ease-in-out;
+}
+ #heroimg:hover{
+    filter: drop-shadow(5px 5px 120px #ff0000);
+    
+     
+ }
+.hero-content h1{
+    position:relative;
+    top:0px;
+    color:var(--text-color);
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 699;
+    font-style: normal;
+    animation-name: SlideInRight;
+    animation-duration: 2s;
+}
+.hero-content h2{
+    margin-right:30px;
+    margin-top:1px;
+    position:relative;
+    top:10px;
+    font-family: "Archivo", sans-serif;
+    animation-name: SlideInRight;
+    animation-duration: 2s;
+    }
+    
+.scrollText{
+    background-color: rgb(255, 0, 0);
+    font-family: "Noto Sans", sans-serif;
+    vertical-align:middle;
+    font-weight: 700;
+    font-style: normal;
+    color:aliceblue;
+    position:relative;
+    bottom:500px;
+    height:35px;
+    border:3px solid rgb(255, 255, 255);
+
+}
+.container{
+    position: relative;
+    top:100px;
+    animation-name:fade;
+    animation-duration: 5s;
+   }
+.box-container{
+   display:flex;
+   position:relative;
+   top:500px;
+}
+.sec2-h1{
+    position:relative;
+    top:500px;
+    text-align: center;
+    font-size:50px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 699;
+}
+.sec2-h1 i{
+    color:yellow;
+}
+.box{ 
+    border:0px solid red;
+    border-radius:15px;
+    margin:20px;
+    width:600px;
+    transition:all 0.3s ease-in-out;
+}
+
+.box button {
+    background-color:var(--text-color);
+    border:0px;
+    
+    border-radius:5px;
+    transition: all 2s ;
+    font-size:20x;
+    width:600px;
+    height:250px;
+
+}
+.box >button >span {
+    position:relative;
+    color:rgb(0, 0, 0);
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #ff0000;
+    font-weight: 700;
+    font-style: normal;
+    vertical-align: center;
+    text-align: center;
+    margin:20px;
+    font-size:80px;
+    
+}
+.box:hover{
+    box-shadow: 15px 15px rgb(255, 225, 0);
+   
+}
+.box > button:hover{
+    text-shadow: 5px 5px rgb(0, 0, 0);
+    
+}
+.devkart{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    top:900px;
+    left:200px;
+}
+
+.box2 h1{
+    font-family: "Noto Sans", sans-serif;
+    font-size:77px;
+    animation-name:SlideInLeft;
+    animation-duration:3s;
+}
+.box2 img{
+    border:3px solid red;
+    animation-name:SlideInLeft;
+    animation-duration:3s;
+}
+.box2 h2{
+    font-family: "Archivo", sans-serif;
+    position:relative;
+    top:35px;
+    left:200px;
+    color:white;
+    font-size:85px;
+    animation-name:SlideInRight;
+    animation-duration:3s;
+}
+.box2 p {
+    font-family: "Archivo", sans-serif;
+    position:relative;
+    top:100px;
+    width:45vw;
+    left:200px;
+    color:white;
+    font-size:35px;
+    font-weight: 600;
+    animation-name:SlideInRight;
+    animation-duration:3s;
+}
+.git-org{
+    background-color:var(--text-color);
+    border:0px;
+    border-radius:5px;
+    transition: all 2s ;
+    font-size:20x;
+    width:350px;
+    height:100px;
+    position:relative;
+    left:205px;
+    top:150px;
+    transition:all 0,5s;
+    animation-name:SlideInRight;
+    animation-duration:2s;
+
+}
+.git-org span{
+    
+        position:relative;
+        color:rgb(0, 0, 0);
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        background-color: #ff0000;
+        font-weight: 800;
+        font-style: normal;
+        text-align: center;
+
+        padding:2px;
+        font-size:40px;
+        
+    
+}
+.git-org:hover{
+    box-shadow: 15px 15px rgb(255, 225, 0);
+   
+}
+
+.disc-org{
+    background-color:var(--text-color);
+    border:0px;
+    border-radius:5px;
+    transition: all 2s ;
+    font-size:20x;
+    width:350px;
+    height:100px;
+    position:relative;
+    left:215px;
+    top:150px;
+    transition:all 0,5s;
+    animation-name:SlideInRight;
+    animation-duration:2s;
+
+}
+.disc-org span{
+    
+        position:relative;
+        color:rgb(0, 0, 0);
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        background-color: #ff0000;
+        font-weight: 800;
+        font-style: normal;
+        text-align: center;
+
+        padding:2px;
+        font-size:40px;
+        
+    
+}
+.disc-org:hover{
+    box-shadow: 15px 15px rgb(255, 225, 0);
+   
+}

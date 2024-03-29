@@ -263,6 +263,9 @@ body{
     height:250px;
 
 }
+.box h1{
+    opacity:0;
+}
 .box >button >span {
     position:relative;
     color:rgb(0, 0, 0);
@@ -279,8 +282,10 @@ body{
 }
 .box:hover{
     box-shadow: 15px 15px rgb(255, 225, 0);
+    
    
 }
+
 .box > button:hover{
     text-shadow: 5px 5px rgb(0, 0, 0);
     
@@ -289,7 +294,7 @@ body{
     display:flex;
     flex-direction:row;
     position:relative;
-    top:900px;
+    top:800px;
     left:200px;
 }
 
@@ -398,4 +403,54 @@ body{
 .disc-org:hover{
     box-shadow: 15px 15px rgb(255, 225, 0);
    
+}
+
+
+.scrollText2{
+   
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:rgb(0, 136, 255);
+    position:relative;
+    top:700px;
+    height:250px;
+    right:1570px;
+    
+    
+
+}
+.scrollText2 button {
+   
+    background-color:var(--text-color);
+    border:0px;
+    padding:20px;
+    border-radius:5px;
+    transition: all 2s ;
+    font-size:20x;
+    width:600px;
+    height:250px;
+    margin-right:50px;
+
+}
+.scrollText2 span{
+    position:relative;
+    color:white;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    vertical-align: center;
+    text-align: center;
+    bottom:10px;
+    top:20px;
+    Font-size:140px;
+
+    
+}
+.scrollText2 marquee {
+    position:relative;
+    left:0px;
+    width:100vw;
+
 }

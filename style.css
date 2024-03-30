@@ -310,7 +310,7 @@ body{
 }
 .box2 img{
     position:relative;
-    top:42px;
+    top:62px;
     right:35px;
     border:3px solid var( --text-color);
     animation-name:SlideInLeft;
@@ -497,7 +497,7 @@ body{
 
  .foot{
      position:relative;
-
+     width:100vw;
      bottom:0px;
      border:12px solid var(--text-color);
  }
@@ -505,4 +505,9 @@ body{
     font-size:80px;
     color: #ffffff;
     text-align:center;
+    width:100vw;
+
+ }
+ #d-orange{
+    color:var(--text-color);
  }

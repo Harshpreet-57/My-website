@@ -494,3 +494,15 @@ body{
     width:100vw;
 
 }
+
+ .foot{
+     position:relative;
+
+     bottom:0px;
+     border:12px solid var(--text-color);
+ }
+ .foot h1{
+    font-size:80px;
+    color: #ffffff;
+    text-align:center;
+ }

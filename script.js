@@ -20,3 +20,34 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".discord");
+
+    
+    buttons.forEach(button => {
+        button.addEventListener("click", redirectToLink);
+    });
+});
+
+function redirectToLink(event) {
+    const link = "https://discord.gg/TwPhfgRhS5"; // Get the data-link attribute value
+    if (link) {
+        window.location.href = link; // Redirect to the specified link
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".playButton");
+
+    
+    buttons.forEach(button => {
+        button.addEventListener("click", redirectToLink2);
+    });
+});
+
+function redirectToLink2(event) {
+    const link = "https://open.spotify.com/playlist/19yHLHGZ1YyckaqymYVELz?si=b60389ae196942da"; // Get the data-link attribute value
+    if (link) {
+        window.location.href = link; // Redirect to the specified link
+    }
+}
